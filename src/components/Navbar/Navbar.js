@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <h3>YOUR LOGO</h3>
-      <div className="nav-menu">
+      <div className={hamburgerState ? "nav-menu nav-menu-active" : "nav-menu"}>
         <ul>
           <li>HOME</li>
           <li>SHOP</li>
@@ -40,20 +40,6 @@ const Navbar = () => {
       >
         <div className="line-1"></div>
         <div className="line-2"></div>
-      </div>
-      <div
-        className={
-          hamburgerState ? "mobile-menu mobile-menu-active" : "mobile-menu"
-        }
-      >
-        <ul>
-          <li>HOME</li>
-          <li>SHOP</li>
-          <li>LOOKBOOK</li>
-          <li>FEATURES</li>
-          <li>PAGES</li>
-          <li>BLOG</li>
-        </ul>
       </div>
     </div>
   );

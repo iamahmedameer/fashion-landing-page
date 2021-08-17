@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +37,7 @@ ul {
 
 .navbar .nav-menu {
   width: 80%;
+  z-index: 99;
 }
 
 .navbar .nav-menu ul {
@@ -81,45 +82,6 @@ ul {
           transform: rotate(45deg) translate(-4px, -2px);
 }
 
-.mobile-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 400px;
-  background-color: aqua;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  display: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.mobile-menu ul {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.mobile-menu-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
 @media all and (min-width: 1024px) {
   .navbar .nav-menu {
     width: 50%;
@@ -127,11 +89,43 @@ ul {
 }
 
 @media all and (max-width: 768px) {
-  .navbar .nav-menu {
-    display: none;
-  }
   .navbar .hamburger {
     display: block;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .navbar .nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: aqua;
+    visibility: hidden;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+  }
+  .navbar .nav-menu ul {
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar .nav-menu-active {
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 /*# sourceMappingURL=Navbar.css.map */
