@@ -1,0 +1,58 @@
+@import "../global.scss";
+
+.avone-heading,
+.avone-description {
+  margin: auto;
+  text-align: center;
+  margin: 10px;
+}
+.avone-heading {
+  margin-top: 100px;
+}
+.avone-description {
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 60%;
+  height: 600px;
+  position: relative;
+  margin: auto;
+  .image1 {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    border: 20px solid white;
+  }
+  .image2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid white;
+  }
+  .image3 {
+    position: absolute;
+    bottom: -20%;
+    right: 0;
+    border: 20px solid white;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .container {
+    width: 80%;
+  }
+}
+@media all and (max-width: 1024px) {
+  .container {
+    width: 80%;
+    .image1 {
+      bottom: -100%;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}

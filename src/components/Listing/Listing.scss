@@ -1,0 +1,46 @@
+@import "../global.scss";
+
+.listing-heading,
+.listing-description {
+  margin: auto;
+  text-align: center;
+  margin: 10px;
+}
+.listing-heading {
+  margin-top: 100px;
+}
+.listing-description {
+  margin-bottom: 50px;
+}
+.product-list {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  .brand {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  .product-name {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .price {
+    font-size: 12px;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .discounted-price {
+    font-size: 12px;
+    color: red;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

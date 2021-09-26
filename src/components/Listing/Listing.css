@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.listing-heading,
+.listing-description {
+  margin: auto;
+  text-align: center;
+  margin: 10px;
+}
+
+.listing-heading {
+  margin-top: 100px;
+}
+
+.listing-description {
+  margin-bottom: 50px;
+}
+
+.product-list {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-list .brand {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.product-list .product-name {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.product-list .price {
+  font-size: 12px;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product-list .discounted-price {
+  font-size: 12px;
+  color: red;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=Listing.css.map */
