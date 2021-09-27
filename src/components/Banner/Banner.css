@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.banner {
+  background-image: url("./assets/footer-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 200px;
+  width: 100%;
+  height: 745px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.banner .banner-content {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+}
+
+.banner .banner-content p {
+  margin: 10px;
+}
+
+.banner .banner-content h1 {
+  margin: 10px;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.banner .banner-content button {
+  margin: 10px;
+  background: #22262a;
+  border: none;
+  padding: 5px 20px 5px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1024px) {
+  .banner {
+    margin-top: 650px;
+    background-position: 100%;
+  }
+  .banner .banner-content {
+    left: 20%;
+    bottom: 20%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .banner {
+    background-position: 100%;
+  }
+  .banner .banner-content {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+/*# sourceMappingURL=Banner.css.map */

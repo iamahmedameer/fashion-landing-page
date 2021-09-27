@@ -12,6 +12,7 @@ import mImage2 from "./assets/mens-fashion2.png";
 import mImage3 from "./assets/mens-fashion3.png";
 import mImage4 from "./assets/mens-fashion4.png";
 import Avone from "./Avone/Avone";
+import Banner from "./Banner/Banner";
 
 const App = () => {
   const womensListing = {
@@ -128,6 +129,7 @@ const App = () => {
         discountedPrice4={mensListing.product4.discountedPrice}
       />
       <Avone />
+      <Banner />
     </div>
   );
 };

@@ -151,8 +151,9 @@ body {
 
 .category-button {
   position: absolute;
-  color: #fff;
-  background: #22262a;
+  color: #22262a;
+  background: #fff;
+  font-weight: 700;
   border: none;
   padding: 5px;
   opacity: 0;
